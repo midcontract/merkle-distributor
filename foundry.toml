@@ -6,6 +6,9 @@ gas_reports_ignore = ["test", "script"]
 
 remappings = [
     "forge-std/=lib/forge-std/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+    "@solbase/=lib/solbase/src/",
+    "murky/=lib/murky/",
 ]
 
 solc = "0.8.25"
