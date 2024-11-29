@@ -23,7 +23,7 @@ contract MerkleDistributor is OwnedThreeStep, Pausable, ReentrancyGuard, EIP712 
     bytes32 private constant MESSAGE_TYPEHASH = keccak256("RewardsClaim(address account,uint256 amount)");
 
     /// @notice The ERC20 token used for rewards.
-    IERC20 public token;
+    IERC20 public immutable token;
 
     /// @notice The Merkle root of the rewards distribution.
     bytes32 public merkleRoot;
